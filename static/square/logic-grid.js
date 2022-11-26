@@ -24,6 +24,7 @@ class Quiz {
         obj.id = 'quiz'
         obj.innerHTML = this.text
         document.body.appendChild(obj)
+        MathJax.typeset();
         document.getElementById("send").addEventListener("click", this.end.bind(this))
     }
 
